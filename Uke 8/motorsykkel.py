@@ -10,9 +10,18 @@ class Motorsykkel:
     def hentKilometerstand(self):
         return self._kmstand
 
+    def hentRegnr(self):
+        return self._regnr
+
     def skrivUt(self):
         print()
         print("Merke:", self._merke)
         print("Registreringsnr:", self._regnr)
         print("Kilometerstand:", self._kmstand)
         print()
+
+    def __eq__(self, motorsykkel):
+        return self._regnr == motorsykkel.hentRegnr()
+
+    def __str__(self):
+        return self._regnr

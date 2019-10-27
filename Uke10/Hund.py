@@ -1,3 +1,5 @@
+from Kennel import Kennel
+
 class Hund:
     def __init__(self, kjonn, navn, alder):
         self._kjonn = kjonn
